@@ -117,12 +117,29 @@ void printListNode(Node* head){
     printf("NULL\n");
 }
 
+// Sắp xếp (Bubble Sort)
+void bubbleSortNode(Node** head){
+    int length = getLengthNode(*head);
+    if(length == 1) return;
+    for(int i = 0; i < length - 1; i++){
+        Node* current = *head;
+        for(int j = 0; j < length - i - 1; j++){
+            if(current->data > current->next->data){
+                int temp = current->data;
+                current->data = current->next->data;
+                current->next->data = temp;
+            }
+            current = current->next;
+        }
+    }
+}
+
 int main(){
     Node* head = NULL;
     unshiftNode(&head, 10);
     unshiftNode(&head, 120);
     insertNodeAt(&head, 1, 0);
-    reverseNode(&head);
+    bubbleSortNode(&head);
     printListNode(head);
     return 0;
 }
