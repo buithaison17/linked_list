@@ -1,0 +1,27 @@
+{
+    "files.associations": {
+        "array": "c",
+        "bitset": "c",
+        "chrono": "c",
+        "string": "c",
+        "vector": "c",
+        "string_view": "c",
+        "functional": "c",
+        "format": "c",
+        "iomanip": "c",
+        "istream": "c",
+        "limits": "c",
+        "ostream": "c",
+        "print": "c",
+        "ranges": "c",
+        "ratio": "c",
+        "span": "c",
+        "spanstream": "c",
+        "sstream": "c",
+        "stop_token": "c",
+        "streambuf": "c",
+        "syncstream": "c",
+        "regex": "c",
+        "tuple": "c"
+    }
+}
